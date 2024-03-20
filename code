@@ -1,0 +1,7 @@
+const selectedGrade = "III";
+
+const filteredGrades = gradesList.filter((grade) => {
+  const selectedGradeIndex = gradesList.findIndex((g) => g.name === selectedGrade);
+  const currentGradeIndex = gradesList.findIndex((g) => g.name === grade.name);
+  return currentGradeIndex >= selectedGradeIndex;
+});
